@@ -171,7 +171,7 @@
     <imu_conf.filter>1</imu_conf.filter>
     <imu_conf.accel_lowpass_filter_x>0</imu_conf.accel_lowpass_filter_x>
     <imu_conf.accel_lowpass_filter_y>0</imu_conf.accel_lowpass_filter_y>
-    <imu_conf.accel_lowpass_filter_z>1</imu_conf.accel_lowpass_filter_z>
+    <imu_conf.accel_lowpass_filter_z>2</imu_conf.accel_lowpass_filter_z>
     <imu_conf.gyro_lowpass_filter>0</imu_conf.gyro_lowpass_filter>
     <imu_conf.sample_rate_hz>832</imu_conf.sample_rate_hz>
     <imu_conf.use_magnetometer>1</imu_conf.use_magnetometer>
@@ -185,7 +185,7 @@
     <imu_conf.accel_offsets__0>0</imu_conf.accel_offsets__0>
     <imu_conf.accel_offsets__1>0</imu_conf.accel_offsets__1>
     <imu_conf.accel_offsets__2>0</imu_conf.accel_offsets__2>
-    <imu_conf.gyro_offsets__0>0</imu_conf.gyro_offsets__0>
-    <imu_conf.gyro_offsets__1>0</imu_conf.gyro_offsets__1>
-    <imu_conf.gyro_offsets__2>0</imu_conf.gyro_offsets__2>
+    <imu_conf.gyro_offsets__0>-0.064</imu_conf.gyro_offsets__0>
+    <imu_conf.gyro_offsets__1>0.315</imu_conf.gyro_offsets__1>
+    <imu_conf.gyro_offsets__2>-0.523</imu_conf.gyro_offsets__2>
 </APPConfiguration>

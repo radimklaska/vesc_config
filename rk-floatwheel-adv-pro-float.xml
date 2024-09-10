@@ -37,7 +37,7 @@
     <tiltback_lv_speed>1</tiltback_lv_speed>
     <tiltback_lv>60</tiltback_lv>
     <tiltback_return_speed>1</tiltback_return_speed>
-    <tiltback_constant>0</tiltback_constant>
+    <tiltback_constant>1.5</tiltback_constant>
     <tiltback_constant_erpm>500</tiltback_constant_erpm>
     <tiltback_variable>0.1</tiltback_variable>
     <tiltback_variable_max>0</tiltback_variable_max>
@@ -51,7 +51,7 @@
     <haptic_buzz_current>0</haptic_buzz_current>
     <haptic_buzz_bms>0</haptic_buzz_bms>
     <noseangling_speed>5</noseangling_speed>
-    <inputtilt_remote_type>1</inputtilt_remote_type>
+    <inputtilt_remote_type>0</inputtilt_remote_type>
     <inputtilt_angle_limit>10</inputtilt_angle_limit>
     <inputtilt_speed>25</inputtilt_speed>
     <inputtilt_smoothing_factor>1</inputtilt_smoothing_factor>
@@ -78,16 +78,16 @@
     <torquetilt_angle_limit>5</torquetilt_angle_limit>
     <torquetilt_on_speed>5</torquetilt_on_speed>
     <torquetilt_off_speed>3</torquetilt_off_speed>
-    <torquetilt_strength>0.1</torquetilt_strength>
+    <torquetilt_strength>0.15</torquetilt_strength>
     <torquetilt_strength_regen>0.05</torquetilt_strength_regen>
-    <atr_strength_up>0.7</atr_strength_up>
+    <atr_strength_up>0.9</atr_strength_up>
     <atr_strength_down>0.7</atr_strength_down>
     <atr_threshold_up>2</atr_threshold_up>
     <atr_threshold_down>1</atr_threshold_down>
     <atr_speed_boost>0.3</atr_speed_boost>
-    <atr_angle_limit>6</atr_angle_limit>
+    <atr_angle_limit>10</atr_angle_limit>
     <atr_on_speed>10</atr_on_speed>
-    <atr_off_speed>7</atr_off_speed>
+    <atr_off_speed>10</atr_off_speed>
     <atr_response_boost>1</atr_response_boost>
     <atr_transition_boost>1</atr_transition_boost>
     <atr_filter>5</atr_filter>
