@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomConfiguration>
     <ConfigVersion>2</ConfigVersion>
-    <config_name>float_config</config_name>
+    <config_name>RefloatConfig</config_name>
     <kp>28</kp>
     <kp2>0.6</kp2>
     <ki>0.06</ki>
     <mahony_kp>1.8</mahony_kp>
+    <mahony_kp_roll>1.4</mahony_kp_roll>
     <kp_brake>1</kp_brake>
     <kp2_brake>1</kp2_brake>
+    <target_filter.type>1</target_filter.type>
+    <target_filter.alpha>0.01</target_filter.alpha>
+    <target_filter.in_alpha_away>0.004</target_filter.in_alpha_away>
+    <target_filter.in_alpha_back>0.05</target_filter.in_alpha_back>
+    <target_filter.ema_half_time>0.36</target_filter.ema_half_time>
+    <target_filter.ema_return_multiplier>2</target_filter.ema_return_multiplier>
     <hertz>832</hertz>
     <fault_pitch>60</fault_pitch>
     <fault_roll>60</fault_roll>
@@ -20,41 +27,40 @@
     <fault_delay_switch_full>250</fault_delay_switch_full>
     <fault_adc_half_erpm>200</fault_adc_half_erpm>
     <fault_is_dual_switch>0</fault_is_dual_switch>
-    <fault_moving_fault_disabled>0</fault_moving_fault_disabled>
+    <fault_moving_fault_disabled>1</fault_moving_fault_disabled>
     <fault_darkride_enabled>0</fault_darkride_enabled>
     <fault_reversestop_enabled>0</fault_reversestop_enabled>
     <tiltback_duty_angle>5</tiltback_duty_angle>
     <tiltback_duty_speed>3</tiltback_duty_speed>
     <tiltback_duty>0.8</tiltback_duty>
     <is_dutybeep_enabled>0</is_dutybeep_enabled>
-    <surge_angle>0</surge_angle>
-    <surge_duty_start>0.88</surge_duty_start>
-    <is_surgebeep_enabled>1</is_surgebeep_enabled>
     <tiltback_hv_angle>8</tiltback_hv_angle>
     <tiltback_hv_speed>1</tiltback_hv_speed>
-    <tiltback_hv>85.5</tiltback_hv>
+    <tiltback_hv>90</tiltback_hv>
     <tiltback_lv_angle>10</tiltback_lv_angle>
     <tiltback_lv_speed>1</tiltback_lv_speed>
-    <tiltback_lv>60</tiltback_lv>
+    <tiltback_lv>58</tiltback_lv>
     <tiltback_return_speed>1</tiltback_return_speed>
     <tiltback_constant>1.5</tiltback_constant>
     <tiltback_constant_erpm>500</tiltback_constant_erpm>
     <tiltback_variable>0.1</tiltback_variable>
     <tiltback_variable_max>0</tiltback_variable_max>
     <tiltback_variable_erpm>0</tiltback_variable_erpm>
-    <haptic_buzz_intensity>0</haptic_buzz_intensity>
-    <haptic_buzz_min>0</haptic_buzz_min>
-    <haptic_buzz_duty>0</haptic_buzz_duty>
-    <haptic_buzz_hv>0</haptic_buzz_hv>
-    <haptic_buzz_lv>0</haptic_buzz_lv>
-    <haptic_buzz_temp>0</haptic_buzz_temp>
-    <haptic_buzz_current>0</haptic_buzz_current>
-    <haptic_buzz_bms>0</haptic_buzz_bms>
+    <haptic.duty.frequency>590</haptic.duty.frequency>
+    <haptic.duty.strength>5</haptic.duty.strength>
+    <haptic.error.frequency>590</haptic.error.frequency>
+    <haptic.error.strength>5</haptic.error.strength>
+    <haptic.vibrate.frequency>70</haptic.vibrate.frequency>
+    <haptic.vibrate.strength>5</haptic.vibrate.strength>
+    <haptic.duty_solid_threshold>0.85</haptic.duty_solid_threshold>
+    <haptic.current_threshold>0</haptic.current_threshold>
+    <haptic.strength_a>0.1</haptic.strength_a>
+    <haptic.strength_b>0.04</haptic.strength_b>
+    <haptic.strength_c>0.004</haptic.strength_c>
     <noseangling_speed>5</noseangling_speed>
     <inputtilt_remote_type>0</inputtilt_remote_type>
     <inputtilt_angle_limit>10</inputtilt_angle_limit>
     <inputtilt_speed>25</inputtilt_speed>
-    <inputtilt_smoothing_factor>1</inputtilt_smoothing_factor>
     <inputtilt_invert_throttle>1</inputtilt_invert_throttle>
     <inputtilt_deadband>0.1</inputtilt_deadband>
     <remote_throttle_current_max>0</remote_throttle_current_max>
@@ -62,10 +68,11 @@
     <startup_pitch_tolerance>3</startup_pitch_tolerance>
     <startup_roll_tolerance>45</startup_roll_tolerance>
     <startup_speed>30</startup_speed>
-    <startup_click_current>0</startup_click_current>
-    <startup_simplestart_enabled>0</startup_simplestart_enabled>
-    <startup_pushstart_enabled>0</startup_pushstart_enabled>
-    <startup_dirtylandings_enabled>0</startup_dirtylandings_enabled>
+    <startup_click_current>10</startup_click_current>
+    <startup_simplestart_enabled>1</startup_simplestart_enabled>
+    <startup_pushstart_enabled>1</startup_pushstart_enabled>
+    <startup_dirtylandings_enabled>1</startup_dirtylandings_enabled>
+    <parking_brake_mode>1</parking_brake_mode>
     <brake_current>6</brake_current>
     <ki_limit>30</ki_limit>
     <booster_angle>0</booster_angle>
@@ -93,9 +100,6 @@
     <atr_filter>5</atr_filter>
     <atr_amps_accel_ratio>18</atr_amps_accel_ratio>
     <atr_amps_decel_ratio>18</atr_amps_decel_ratio>
-    <atr_test1>0</atr_test1>
-    <atr_test2>0</atr_test2>
-    <atr_test3>0</atr_test3>
     <braketilt_strength>0</braketilt_strength>
     <braketilt_lingering>2</braketilt_lingering>
     <turntilt_strength>4</turntilt_strength>
@@ -106,21 +110,53 @@
     <turntilt_erpm_boost>200</turntilt_erpm_boost>
     <turntilt_erpm_boost_end>5000</turntilt_erpm_boost_end>
     <turntilt_yaw_aggregate>90</turntilt_yaw_aggregate>
-    <led_type>3</led_type>
-    <led_status_count>10</led_status_count>
-    <led_forward_count>20</led_forward_count>
-    <led_rear_count>20</led_rear_count>
-    <led_brightness>100</led_brightness>
-    <led_brightness_idle>10</led_brightness_idle>
-    <led_mode>0</led_mode>
-    <led_mode_idle>1</led_mode_idle>
-    <led_status_brightness>50</led_status_brightness>
-    <led_status_mode>0</led_status_mode>
-    <limit_current_accel>150</limit_current_accel>
-    <limit_current_brake>-150</limit_current_brake>
-    <limit_current_cont>100</limit_current_cont>
+    <leds.on>1</leds.on>
+    <leds.headlights_on>1</leds.headlights_on>
+    <leds.headlights_transition>0</leds.headlights_transition>
+    <leds.direction_transition>0</leds.direction_transition>
+    <leds.lights_off_when_lifted>1</leds.lights_off_when_lifted>
+    <leds.status_on_front_when_lifted>1</leds.status_on_front_when_lifted>
+    <leds.front.mode>4</leds.front.mode>
+    <leds.front.brightness>0.5</leds.front.brightness>
+    <leds.front.color1>4</leds.front.color1>
+    <leds.front.color2>0</leds.front.color2>
+    <leds.front.speed>1</leds.front.speed>
+    <leds.rear.mode>2</leds.rear.mode>
+    <leds.rear.brightness>0.5</leds.rear.brightness>
+    <leds.rear.color1>23</leds.rear.color1>
+    <leds.rear.color2>0</leds.rear.color2>
+    <leds.rear.speed>1</leds.rear.speed>
+    <leds.headlights.mode>0</leds.headlights.mode>
+    <leds.headlights.brightness>0.5</leds.headlights.brightness>
+    <leds.headlights.color1>1</leds.headlights.color1>
+    <leds.headlights.color2>0</leds.headlights.color2>
+    <leds.headlights.speed>1</leds.headlights.speed>
+    <leds.taillights.mode>0</leds.taillights.mode>
+    <leds.taillights.brightness>0.5</leds.taillights.brightness>
+    <leds.taillights.color1>4</leds.taillights.color1>
+    <leds.taillights.color2>0</leds.taillights.color2>
+    <leds.taillights.speed>1</leds.taillights.speed>
+    <leds.status.brightness_headlights_off>0.5</leds.status.brightness_headlights_off>
+    <leds.status.brightness_headlights_on>0.2</leds.status.brightness_headlights_on>
+    <leds.status.show_sensors_while_running>1</leds.status.show_sensors_while_running>
+    <leds.status.duty_threshold>0.5</leds.status.duty_threshold>
+    <leds.status.red_bar_percentage>0.2</leds.status.red_bar_percentage>
+    <leds.status.idle_timeout>0</leds.status.idle_timeout>
+    <leds.status_idle.mode>0</leds.status_idle.mode>
+    <leds.status_idle.brightness>0.3</leds.status_idle.brightness>
+    <leds.status_idle.color1>4</leds.status_idle.color1>
+    <leds.status_idle.color2>0</leds.status_idle.color2>
+    <leds.status_idle.speed>1</leds.status_idle.speed>
+    <hardware.leds.type>0</hardware.leds.type>
+    <hardware.leds.pin>1</hardware.leds.pin>
+    <hardware.leds.color_order>0</hardware.leds.color_order>
+    <hardware.leds.status.count>10</hardware.leds.status.count>
+    <hardware.leds.status.reverse>0</hardware.leds.status.reverse>
+    <hardware.leds.front.count>20</hardware.leds.front.count>
+    <hardware.leds.front.reverse>0</hardware.leds.front.reverse>
+    <hardware.leds.rear.count>20</hardware.leds.rear.count>
+    <hardware.leds.rear.reverse>0</hardware.leds.rear.reverse>
     <dark_pitch_offset>0</dark_pitch_offset>
     <is_beeper_enabled>0</is_beeper_enabled>
-    <float_disable>0</float_disable>
-    <float_version>2</float_version>
+    <disabled>0</disabled>
 </CustomConfiguration>
