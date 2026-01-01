@@ -7,8 +7,8 @@
     <sensor_mode>0</sensor_mode>
     <l_current_max>170</l_current_max>
     <l_current_min>-170</l_current_min>
-    <l_in_current_max>70</l_in_current_max>
-    <l_in_current_min>-45</l_in_current_min>
+    <l_in_current_max>80</l_in_current_max>
+    <l_in_current_min>-50</l_in_current_min>
     <l_in_current_map_start>1</l_in_current_map_start>
     <l_in_current_map_filter>0.005</l_in_current_map_filter>
     <l_abs_current_max>250</l_abs_current_max>
