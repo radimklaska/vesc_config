@@ -1,0 +1,12 @@
+# Secrets file - NEVER commit this!
+.secrets
+
+# Editor backups
+*~
+*.swp
+*.swo
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
