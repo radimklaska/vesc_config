@@ -7,18 +7,18 @@
     <can_baud_rate>2</can_baud_rate>
     <wifi_mode>1</wifi_mode>
     <wifi_sta_ssid>TrailbusVIP</wifi_sta_ssid>
-    <wifi_sta_key>pw-tbvip</wifi_sta_key>
+    <wifi_sta_key>REDACTED-LINE-1</wifi_sta_key>
     <wifi_ap_ssid>TumasHbms</wifi_ap_ssid>
-    <wifi_ap_key>pw-tbvip</wifi_ap_key>
+    <wifi_ap_key>REDACTED-LINE-1</wifi_ap_key>
     <use_tcp_local>1</use_tcp_local>
     <use_tcp_hub>1</use_tcp_hub>
     <tcp_hub_url>veschub.vedder.se</tcp_hub_url>
     <tcp_hub_port>65101</tcp_hub_port>
     <tcp_hub_id>TumasHbms</tcp_hub_id>
-    <tcp_hub_pass>pw-tbvip</tcp_hub_pass>
+    <tcp_hub_pass>REDACTED-LINE-1</tcp_hub_pass>
     <ble_mode>1</ble_mode>
     <ble_name>TumasHbm</ble_name>
-    <ble_pin>123456</ble_pin>
+    <ble_pin>REDACTED-LINE-3</ble_pin>
     <ble_service_capacity>0</ble_service_capacity>
     <ble_chr_descr_capacity>0</ble_chr_descr_capacity>
     <cells_ic1>16</cells_ic1>

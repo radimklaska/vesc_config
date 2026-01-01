@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomConfiguration>
+    <ConfigVersion>4</ConfigVersion>
+    <config_name>main_config_t</config_name>
+    <controller_id>2</controller_id>
+    <can_status_rate_hz>20</can_status_rate_hz>
+    <can_baud_rate>2</can_baud_rate>
+    <wifi_mode>1</wifi_mode>
+    <wifi_sta_ssid>Trailbus</wifi_sta_ssid>
+    <wifi_sta_key>REDACTED-LINE-2</wifi_sta_key>
+    <wifi_ap_ssid>rk-adv2</wifi_ap_ssid>
+    <wifi_ap_key>REDACTED-LINE-2</wifi_ap_key>
+    <use_tcp_local>1</use_tcp_local>
+    <use_tcp_hub>1</use_tcp_hub>
+    <tcp_hub_url>veschub.vedder.se</tcp_hub_url>
+    <tcp_hub_port>65101</tcp_hub_port>
+    <tcp_hub_id>rk-adv2</tcp_hub_id>
+    <tcp_hub_pass>REDACTED-LINE-1</tcp_hub_pass>
+    <ble_mode>2</ble_mode>
+    <ble_name>rk-adv2</ble_name>
+    <ble_pin>REDACTED-LINE-4</ble_pin>
+    <ble_service_capacity>0</ble_service_capacity>
+    <ble_chr_descr_capacity>0</ble_chr_descr_capacity>
+</CustomConfiguration>
