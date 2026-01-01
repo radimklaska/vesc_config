@@ -67,6 +67,11 @@ main() {
         # Skip if file doesn't exist
         [ -f "$file" ] || continue
 
+        # Skip documentation and example files
+        if [ "$file" = ".secrets.example" ] || [ "$file" = "README.md" ]; then
+            continue
+        fi
+
         # Skip binary files
         if file -b --mime-encoding "$file" | grep -q "binary"; then
             continue
