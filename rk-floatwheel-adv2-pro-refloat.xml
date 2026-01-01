@@ -141,7 +141,7 @@
     <leds.status_idle.color1>4</leds.status_idle.color1>
     <leds.status_idle.color2>0</leds.status_idle.color2>
     <leds.status_idle.speed>1</leds.status_idle.speed>
-    <hardware.leds.mode>0</hardware.leds.mode>
+    <hardware.leds.mode>2</hardware.leds.mode>
     <hardware.leds.pin>1</hardware.leds.pin>
     <hardware.leds.status.order>1</hardware.leds.status.order>
     <hardware.leds.status.count>10</hardware.leds.status.count>

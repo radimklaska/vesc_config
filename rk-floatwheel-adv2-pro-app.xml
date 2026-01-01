@@ -112,12 +112,12 @@
     <imu_conf.mahony_ki>0</imu_conf.mahony_ki>
     <imu_conf.madgwick_beta>0.1</imu_conf.madgwick_beta>
     <imu_conf.rot_roll>178.764</imu_conf.rot_roll>
-    <imu_conf.rot_pitch>4.38542</imu_conf.rot_pitch>
+    <imu_conf.rot_pitch>4.385</imu_conf.rot_pitch>
     <imu_conf.rot_yaw>0</imu_conf.rot_yaw>
-    <imu_conf.accel_offsets__0>0.0260613</imu_conf.accel_offsets__0>
-    <imu_conf.accel_offsets__1>0.0200707</imu_conf.accel_offsets__1>
-    <imu_conf.accel_offsets__2>0.00164781</imu_conf.accel_offsets__2>
-    <imu_conf.gyro_offsets__0>1.26435</imu_conf.gyro_offsets__0>
-    <imu_conf.gyro_offsets__1>-0.117686</imu_conf.gyro_offsets__1>
-    <imu_conf.gyro_offsets__2>-0.707182</imu_conf.gyro_offsets__2>
+    <imu_conf.accel_offsets__0>0.026</imu_conf.accel_offsets__0>
+    <imu_conf.accel_offsets__1>0.02</imu_conf.accel_offsets__1>
+    <imu_conf.accel_offsets__2>0.002</imu_conf.accel_offsets__2>
+    <imu_conf.gyro_offsets__0>1.264</imu_conf.gyro_offsets__0>
+    <imu_conf.gyro_offsets__1>-0.118</imu_conf.gyro_offsets__1>
+    <imu_conf.gyro_offsets__2>-0.707</imu_conf.gyro_offsets__2>
 </APPConfiguration>
