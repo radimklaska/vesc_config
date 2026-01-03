@@ -27,7 +27,7 @@
     <l_temp_fet_start>75</l_temp_fet_start>
     <l_temp_fet_end>85</l_temp_fet_end>
     <l_temp_motor_start>85</l_temp_motor_start>
-    <l_temp_motor_end>90</l_temp_motor_end>
+    <l_temp_motor_end>95</l_temp_motor_end>
     <l_temp_accel_dec>0</l_temp_accel_dec>
     <l_min_duty>0.005</l_min_duty>
     <l_max_duty>0.95</l_max_duty>

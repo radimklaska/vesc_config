@@ -24,18 +24,18 @@
     <fault_moving_fault_disabled>1</fault_moving_fault_disabled>
     <fault_darkride_enabled>0</fault_darkride_enabled>
     <fault_reversestop_enabled>0</fault_reversestop_enabled>
-    <tiltback_duty_angle>5</tiltback_duty_angle>
+    <tiltback_duty_angle>4</tiltback_duty_angle>
     <tiltback_duty_speed>3</tiltback_duty_speed>
-    <tiltback_duty>0.8</tiltback_duty>
+    <tiltback_duty>0.87</tiltback_duty>
     <is_dutybeep_enabled>1</is_dutybeep_enabled>
     <tiltback_hv_angle>8</tiltback_hv_angle>
     <tiltback_hv_speed>1</tiltback_hv_speed>
-    <tiltback_hv>86</tiltback_hv>
+    <tiltback_hv>86.5</tiltback_hv>
     <tiltback_lv_angle>10</tiltback_lv_angle>
     <tiltback_lv_speed>1</tiltback_lv_speed>
     <tiltback_lv>60</tiltback_lv>
-    <tiltback_return_speed>1</tiltback_return_speed>
-    <tiltback_constant>1.5</tiltback_constant>
+    <tiltback_return_speed>2</tiltback_return_speed>
+    <tiltback_constant>1</tiltback_constant>
     <tiltback_constant_erpm>500</tiltback_constant_erpm>
     <tiltback_variable>0.1</tiltback_variable>
     <tiltback_variable_max>0</tiltback_variable_max>
@@ -59,7 +59,7 @@
     <inputtilt_deadband>0.1</inputtilt_deadband>
     <remote_throttle_current_max>0</remote_throttle_current_max>
     <remote_throttle_grace_period>10</remote_throttle_grace_period>
-    <startup_pitch_tolerance>3</startup_pitch_tolerance>
+    <startup_pitch_tolerance>4</startup_pitch_tolerance>
     <startup_roll_tolerance>45</startup_roll_tolerance>
     <startup_speed>30</startup_speed>
     <startup_click_current>0</startup_click_current>
