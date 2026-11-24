@@ -2,10 +2,10 @@
 <CustomConfiguration>
     <ConfigVersion>4</ConfigVersion>
     <config_name>RefloatConfig</config_name>
-    <kp>20</kp>
+    <kp>28</kp>
     <kp2>0.6</kp2>
-    <ki>0.005</ki>
-    <mahony_kp>2</mahony_kp>
+    <ki>0.06</ki>
+    <mahony_kp>1.8</mahony_kp>
     <mahony_kp_roll>1.4</mahony_kp_roll>
     <kp_brake>1</kp_brake>
     <kp2_brake>1</kp2_brake>
@@ -19,7 +19,7 @@
     <is_footbeep_enabled>1</is_footbeep_enabled>
     <fault_delay_pitch>250</fault_delay_pitch>
     <fault_delay_roll>250</fault_delay_roll>
-    <fault_delay_switch_half>250</fault_delay_switch_half>
+    <fault_delay_switch_half>100</fault_delay_switch_half>
     <fault_delay_switch_full>250</fault_delay_switch_full>
     <fault_adc_half_erpm>200</fault_adc_half_erpm>
     <fault_is_dual_switch>0</fault_is_dual_switch>
@@ -40,9 +40,9 @@
     <tiltback_speed>0</tiltback_speed>
     <tiltback_return_speed>1</tiltback_return_speed>
     <persistent_fatal_error>1</persistent_fatal_error>
-    <tiltback_constant>0</tiltback_constant>
+    <tiltback_constant>0.5</tiltback_constant>
     <tiltback_constant_erpm>500</tiltback_constant_erpm>
-    <tiltback_variable>0.3</tiltback_variable>
+    <tiltback_variable>0.1</tiltback_variable>
     <tiltback_variable_max>0</tiltback_variable_max>
     <tiltback_variable_erpm>0</tiltback_variable_erpm>
     <bms.enabled>0</bms.enabled>
@@ -70,7 +70,7 @@
     <inputtilt_deadband>0.1</inputtilt_deadband>
     <remote.max_move_speed>0</remote.max_move_speed>
     <remote_throttle_grace_period>10</remote_throttle_grace_period>
-    <startup_pitch_tolerance>4</startup_pitch_tolerance>
+    <startup_pitch_tolerance>3</startup_pitch_tolerance>
     <startup_roll_tolerance>45</startup_roll_tolerance>
     <startup_speed>30</startup_speed>
     <startup_click_current>0</startup_click_current>
@@ -80,24 +80,24 @@
     <parking_brake_mode>1</parking_brake_mode>
     <brake_current>6</brake_current>
     <ki_limit>30</ki_limit>
-    <booster_angle>8</booster_angle>
-    <booster_ramp>4</booster_ramp>
-    <booster_current>0</booster_current>
-    <brkbooster_angle>8</brkbooster_angle>
+    <booster_angle>0.5</booster_angle>
+    <booster_ramp>2</booster_ramp>
+    <booster_current>10</booster_current>
+    <brkbooster_angle>1</brkbooster_angle>
     <brkbooster_ramp>4</brkbooster_ramp>
-    <brkbooster_current>0</brkbooster_current>
-    <torquetilt_start_current>15</torquetilt_start_current>
-    <torquetilt_angle_limit>8</torquetilt_angle_limit>
+    <brkbooster_current>10</brkbooster_current>
+    <torquetilt_start_current>20</torquetilt_start_current>
+    <torquetilt_angle_limit>5</torquetilt_angle_limit>
     <torque_tilt.filter.on_speed_limit>24</torque_tilt.filter.on_speed_limit>
     <torque_tilt.filter.off_speed_limit>24</torque_tilt.filter.off_speed_limit>
-    <torquetilt_strength>0.1</torquetilt_strength>
-    <torquetilt_strength_regen>0.1</torquetilt_strength_regen>
-    <atr_strength_up>1</atr_strength_up>
-    <atr_strength_down>0.5</atr_strength_down>
-    <atr_threshold_up>1.5</atr_threshold_up>
-    <atr_threshold_down>1.5</atr_threshold_down>
+    <torquetilt_strength>0.15</torquetilt_strength>
+    <torquetilt_strength_regen>0.2</torquetilt_strength_regen>
+    <atr_strength_up>0.6</atr_strength_up>
+    <atr_strength_down>0.7</atr_strength_down>
+    <atr_threshold_up>2</atr_threshold_up>
+    <atr_threshold_down>1</atr_threshold_down>
     <atr_speed_boost>0.3</atr_speed_boost>
-    <atr_angle_limit>8</atr_angle_limit>
+    <atr_angle_limit>10</atr_angle_limit>
     <atr.filter.on_speed_limit>24</atr.filter.on_speed_limit>
     <atr.filter.off_speed_limit>24</atr.filter.off_speed_limit>
     <atr.transition_boost>2</atr.transition_boost>
@@ -107,14 +107,14 @@
     <torque_tilt.filter.off_speed_time_constant>0.16</torque_tilt.filter.off_speed_time_constant>
     <turn_tilt.filter.time_constant>0.2</turn_tilt.filter.time_constant>
     <remote.filter.time_constant>0.2</remote.filter.time_constant>
-    <atr_amps_accel_ratio>9</atr_amps_accel_ratio>
-    <atr_amps_decel_ratio>8</atr_amps_decel_ratio>
+    <atr_amps_accel_ratio>18</atr_amps_accel_ratio>
+    <atr_amps_decel_ratio>18</atr_amps_decel_ratio>
     <braketilt_strength>0</braketilt_strength>
     <braketilt_lingering>2</braketilt_lingering>
-    <turntilt_strength>0</turntilt_strength>
-    <turntilt_angle_limit>3</turntilt_angle_limit>
-    <turntilt_start_angle>5</turntilt_start_angle>
-    <turntilt_start_erpm>2000</turntilt_start_erpm>
+    <turntilt_strength>4</turntilt_strength>
+    <turntilt_angle_limit>2</turntilt_angle_limit>
+    <turntilt_start_angle>2</turntilt_start_angle>
+    <turntilt_start_erpm>1000</turntilt_start_erpm>
     <turntilt_erpm_boost>200</turntilt_erpm_boost>
     <turntilt_erpm_boost_end>5000</turntilt_erpm_boost_end>
     <turntilt_yaw_aggregate>90</turntilt_yaw_aggregate>
@@ -147,7 +147,7 @@
     <leds.status.brightness_headlights_off>0.5</leds.status.brightness_headlights_off>
     <leds.status.brightness_headlights_on>0.2</leds.status.brightness_headlights_on>
     <leds.status.show_sensors_while_running>1</leds.status.show_sensors_while_running>
-    <leds.status.motor_utilization_threshold>0.6</leds.status.motor_utilization_threshold>
+    <leds.status.motor_utilization_threshold>0.5</leds.status.motor_utilization_threshold>
     <leds.status.red_bar_percentage>0.2</leds.status.red_bar_percentage>
     <leds.status.idle_timeout>0</leds.status.idle_timeout>
     <leds.status_idle.mode>4</leds.status_idle.mode>
